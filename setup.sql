@@ -1,4 +1,4 @@
-CREATE TABLE books(
+CREATE TABLE unnormalized(
     CRN varchar(5) NOT NULL,
     ISBN varchar(13) NOT NULL,
     Title varchar(255) NOT NULL,

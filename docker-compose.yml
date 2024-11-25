@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   postgres:
     build: .
@@ -8,6 +6,8 @@ services:
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: ada_db
     volumes:
+      - ./data:/data
+      - ./queries:/queries
       - postgres-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
